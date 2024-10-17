@@ -3,6 +3,7 @@ from ._agefit import FitWindow
 from .backend import GenericFit, SpectrumFit, CalibrationFit
 
 __all__ = [
+    "__version__",
     "GenericFit",
     "SpectrumFit",
     "CalibrationFit",
