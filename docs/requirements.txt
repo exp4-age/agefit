@@ -1,5 +1,5 @@
 # agefit
-#-e .
+-e .
 
 # agepy https://pypi.org/project/exp4-agepy/
 exp4-agepy
