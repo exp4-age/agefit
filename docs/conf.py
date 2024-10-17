@@ -19,6 +19,8 @@ rst_epilog = """
    :target: https://img.shields.io/badge/version-{}-blue
 .. |licenseshield| image:: https://img.shields.io/badge/License-MIT-blue
    :target: https://github.com/exp4-age/agefit/blob/main/LICENSE
+.. |testshield| image:: https://github.com/exp4-age/agefit/actions/workflows/test.yml/badge.svg
+   :target: https://github.com/exp4-age/agefit
 
 """.format(version, version)
 
