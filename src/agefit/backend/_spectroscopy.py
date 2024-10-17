@@ -26,7 +26,6 @@ from jax.scipy.stats import expon as jexpon
 from resample.bootstrap import variance as bvar
 from jacobi import propagate
 # Import internal modules
-from agefit import run
 from agefit.backend import GenericFit
 # Import modules for type hints
 if TYPE_CHECKING:
@@ -361,6 +360,7 @@ class SpectrumFit(IminuitFit):
     """
 
     def __init__(
+        self,
         x: ArrayLike,
         y: ArrayLike,
         xerr: ArrayLike = None,
@@ -677,6 +677,7 @@ class CalibrationFit(IminuitFit):
     """
 
     def __init__(
+        self,
         x: ArrayLike,
         y: ArrayLike,
         yerr: ArrayLike,
