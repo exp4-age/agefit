@@ -1,7 +1,7 @@
 agefit
 ======
 
-|versionshield| |licenseshield|
+|versionshield| |licenseshield| |testshield|
 
 
 
