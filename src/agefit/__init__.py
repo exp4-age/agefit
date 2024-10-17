@@ -1,9 +1,9 @@
-from .__version__ import __version__
 from ._agefit import FitWindow
 from .backend import GenericFit, SpectrumFit, CalibrationFit
 
+__version__ = "0.1.0"
+
 __all__ = [
-    "__version__",
     "GenericFit",
     "SpectrumFit",
     "CalibrationFit",
@@ -20,7 +20,7 @@ def start():
         prog="agefit", description="Start the agefit GUI.")
     parser.add_argument("backend", choices=["spectrum", "calibration"],
                         help="The backend to use.")
-    args = parser().parse_args()
+    args = parser.parse_args()
     backend = args.backend
     # Create dummy data and initialize the backend
     rng = np.random.default_rng(42)
