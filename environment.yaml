@@ -1,0 +1,10 @@
+name: agefitdev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pandoc
+  - pip
+  - pip:
+    - -r docs/requirements.txt
