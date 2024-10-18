@@ -447,7 +447,7 @@ class SpectrumFit(IminuitFit):
                 raise ValueError("yerr must have the same length as y.")
             if xerr is not None:
                 warnings.warn("xerr values are ignored for equally spaced x.")
-            self.xerr = 0.5 * dx[0] * np.ones_like(self.x)
+            self.xerr = None
         else:
             self.x = x
             lenx = (x.max() - x.min())
